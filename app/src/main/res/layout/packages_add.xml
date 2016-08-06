@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="Package id"
+        android:ems="10"
+        android:id="@+id/editText1" />
+
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Package Name"
+        android:ems="10"
+        android:id="@+id/editText2" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width= "150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Price"
+            android:ems="10"
+            android:id="@+id/editText3"
+            />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_gravity="center_horizontal"
+            android:entries="@array/price_type_array"
+            android:prompt="@string/price_type_string"/>
+
+        <EditText
+            android:layout_width= "150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Price"
+            android:ems="10"
+            android:id="@+id/editText4"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width= "150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Price"
+            android:ems="10"
+            android:id="@+id/editText5"
+            />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner3"
+            android:layout_gravity="center_horizontal"
+            android:entries="@array/price_type_array"
+            android:prompt="@string/price_type_string"/>
+
+        <EditText
+            android:layout_width= "150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Price"
+            android:ems="10"
+            android:id="@+id/editText6"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:text="Add Services"
+        android:id="@+id/button"
+        android:layout_gravity="right" />
+
+
+
+
+</LinearLayout>

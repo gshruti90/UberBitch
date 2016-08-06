@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="Employee id"
+        android:ems="10"
+        android:id="@+id/editText1" />
+
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Employee Name"
+        android:ems="10"
+        android:id="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/EditTextEmail"
+        android:layout_height="wrap_content"
+        android:hint="Employee Email"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent">
+    </EditText>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    <EditText
+        android:layout_width= "150dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Gender"
+        android:ems="10"
+        android:id="@+id/editText3"
+        />
+
+    <RadioButton
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:id="@+id/radioButton1"
+        android:layout_gravity="right" />
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:id="@+id/radioButton2"
+        android:layout_gravity="right" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:text="Address"
+        android:ems="10"
+        android:id="@+id/editText4" />
+
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Designation"
+        android:ems="10"
+        android:id="@+id/editText5" />
+
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:text="Date of Birth"
+        android:ems="10"
+        android:id="@+id/editText6" />
+
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="Salary"
+        android:ems="10"
+        android:id="@+id/editText7" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Employee Type"
+        android:ems="10"
+        android:id="@+id/editText8" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:layout_gravity="center_horizontal"
+        android:entries="@array/employee_type_array"
+        android:prompt="@string/employee_type_string"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
