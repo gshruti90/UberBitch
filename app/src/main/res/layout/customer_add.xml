@@ -97,13 +97,5 @@
             android:ems="10"
             android:id="@+id/editText8" />
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner1"
-            android:layout_gravity="center_horizontal"
-            android:entries="@array/customer_type_array"
-            android:prompt="@string/customer_type_string"/>
-
     </LinearLayout>
     </LinearLayout>

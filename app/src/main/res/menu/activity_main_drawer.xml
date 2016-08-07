@@ -5,7 +5,7 @@
         <item
             android:id="@+id/nav_services"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Service" />
+            android:title="Services" />
         <item
             android:id="@+id/nav_packages"
             android:icon="@drawable/ic_menu_gallery"
