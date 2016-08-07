@@ -6,7 +6,7 @@
             android:id="@+id/nav_services"
             android:icon="@drawable/ic_menu_camera"
             android:title="Services"
-            android:onClick=""/>
+            />
         <item
             android:id="@+id/nav_packages"
             android:icon="@drawable/ic_menu_gallery"
