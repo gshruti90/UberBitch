@@ -3,6 +3,8 @@ package com.gargdaughters.uberbitch;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +17,10 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    HomePagerAdapter homePagerAdapter;
+    ViewPager mViewPager;
+    TabLayout mTabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +47,13 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        //this is comment
+        homePagerAdapter=new HomePagerAdapter(getSupportFragmentManager());
+        mTabLayout=(TabLayout)findViewById(R.id.tablayout);
+        mViewPager=(ViewPager)findViewById(R.id.viewPager1);
+        mViewPager.setAdapter(homePagerAdapter);
+        mTabLayout.setupWithViewPager(mViewPager);
+
+
     }
 
     @Override
@@ -83,6 +95,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_services) {
+
             // Handle the camera action
         } else if (id == R.id.nav_packages) {
 
