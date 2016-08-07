@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -92,12 +95,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
+
         int id = item.getItemId();
-
+        TabLayout tabLayout=(TabLayout)findViewById(R.id.tablayout);
         if (id == R.id.nav_services) {
-
-            // Handle the camera action
+            tabLayout.getTabAt(0).select();
         } else if (id == R.id.nav_packages) {
+            tabLayout.getTabAt(1).select();
 
         } else if (id == R.id.nav_customer) {
 
@@ -110,9 +115,17 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
-
+        /*if (fragment != null) {
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.addToBackStack(null);
+            transaction.replace(R.id.drawer_layout, fragment);
+            transaction.commit();
+        }*/
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
+        //tabLayout.getTabAt(0).select();
         return true;
     }
 }
