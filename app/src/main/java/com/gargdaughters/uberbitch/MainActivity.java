@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
         navigationView.setNavigationItemSelectedListener(this);
 
         homePagerAdapter=new HomePagerAdapter(getSupportFragmentManager());
@@ -56,8 +57,11 @@ public class MainActivity extends AppCompatActivity
         mViewPager=(ViewPager)findViewById(R.id.viewPager1);
         mViewPager.setAdapter(homePagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
-
-
+        mTabLayout.getTabAt(0).setIcon(R.mipmap.home_bottom_tab_icon);
+        mTabLayout.getTabAt(2).setIcon(R.mipmap.degign_bottom_tab_icon);
+        mTabLayout.getTabAt(1).setIcon(R.mipmap.user_bottom_tab_icon);
+        mTabLayout.getTabAt(3).setIcon(R.mipmap.bill_bottom_tab_icon);
+        mTabLayout.getTabAt(4).setIcon(R.mipmap.settings_bottom_tab_icon);
     }
 
     @Override

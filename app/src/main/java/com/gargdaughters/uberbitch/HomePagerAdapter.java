@@ -18,24 +18,31 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
 
         switch (position){
-            case 0: return new ServicesFragment();
-            case 1: return new PackageFragment();
+            case 0: return new HomeFragment();
+            case 1: return new UserProfileFragment();
+            case 2: return  new DesignFragment();
+            case 3: return new BillFragment();
+            case 4:return  new SettingFragment();
         }
         return null;
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 5;
     }
 
-    @Override
+   /* @Override
     public CharSequence getPageTitle(int position) {
         switch (position)
         {
-            case 0: return "Services";
-            case 1:return "Packages";
+            case 0: return "Home";
+            case 1:return "Profile";
+            case 2: return "Design";
+            case 3: return "Bill";
+            case 4:return "Settings";
         }
         return "";
-    }
+    }*/
+
 }
