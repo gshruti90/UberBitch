@@ -9,7 +9,7 @@
     <string name="employee_type_string">Employee Type</string>
 
     <string-array name="employee_type_array">
-    <item>Regular</item>
+        <item>Regular</item>
         <item>Part-time</item>
         <item>Temporary</item>
     </string-array>
@@ -27,7 +27,56 @@
         <item>Others</item>
     </string-array>
 
+    <string name="service_list_string">Services</string>
 
+    <string-array name="service_list_array">
+        <item>Waxing_Eyebrows</item>
+        <item>Waxing_Upperlip</item>
+        <item>Waxing_Chin</item>
+        <item>Waxing_Forehead</item>
+        <item>Waxing_Sides</item>
+        <item>Waxing_Underarms</item>
+        <item>Waxing_Face</item>
+        <item>Waxing_Full_Arms</item>
+        <item>Waxing_Half_Arms</item>
+        <item>Waxing_Full_Legs</item>
+        <item>Waxing_Half_Legs</item>
+        <item>Waxing_Stomach</item>
+        <item>Waxing_Back (Blouse Line)</item>
+        <item>Waxing_B-Line</item>
+        <item>Waxing_Brazilian</item>
+        <item>Waxing_Full_Body - 1 </item>
+        <item>Waxing_Full_Body - 2 </item>
+        <item>Waxing_Full_Body with Pack</item>
+        <item>Threading_Eyebrows</item>
+        <item>Threading_Upper or Lower Lip</item>
+        <item>Threading_Chin</item>
+        <item>Threading_Forehead</item>
+        <item>Threading_Sides</item>
+        <item>Threading_Neck</item>
+        <item>Threading_Jaw Line</item>
+        <item>Threading_Face (Does not include Eye Brows)</item>
+        <item>Pedicure_Basic Pedicure - w/o Polish</item>
+        <item>Pedicure_Scrub</item>
+        <item>Pedicure_Paraffin</item>
+        <item>Pedicure_Polish</item>
+        <item>Pedicure_Regular Pedicure (40 min)</item>
+        <item>Pedicure_French Pedicure (60 min)</item>
+        <item>Pedicure_French Polish (20 min)</item>
+        <item>Pedicure_Pedicure - Aroma (60 min)</item>
+        <item>Pedicure_Pedicure - Mineral (60 min)</item>
+        <item>Pedicure_Pedicure - Chocolate (60 min)</item>
+        <item>Pedicure_Basic Manicure - w/o Polish</item>
+        <item>Pedicure_Regular Manicure (30 min)</item>
+        <item>Pedicure_Paraffin</item>
+        <item>Pedicure_Buffing</item>
+        <item>Pedicure_Polish</item>
+        <item>Pedicure_Cut and File</item>
+        <item>Pedicure_French Manicure (60 min)</item>
+        <item>Pedicure_French Polish (15 min)</item>
+        <item>Pedicure_Manicure - Aroma (45 min)</item>
+        <item>Pedicure_Manicure - Mineral (45 min)</item>
+    </string-array>
 
 
 </resources>

@@ -19,6 +19,38 @@
         android:ems="10"
         android:id="@+id/editText2" />
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width= "150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Select Service"
+            android:ems="10"
+            android:id="@+id/editText9"
+            />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner5"
+            android:layout_gravity="center_horizontal"
+            android:entries="@array/service_list_array"
+            android:prompt="@string/service_list_string"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="+"
+            android:id="@+id/button2"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:orientation="horizontal"
@@ -49,8 +81,7 @@
             android:inputType="text"
             android:text="Price"
             android:ems="10"
-            android:id="@+id/editText4"
-            />
+            android:id="@+id/editText4"/>
 
     </LinearLayout>
 
@@ -89,14 +120,46 @@
 
     </LinearLayout>
 
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width= "150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Price"
+            android:ems="10"
+            android:id="@+id/editText7"
+            />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner4"
+            android:layout_gravity="center_horizontal"
+            android:entries="@array/price_type_array"
+            android:prompt="@string/price_type_string"/>
+
+        <EditText
+            android:layout_width= "150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Price"
+            android:ems="10"
+            android:id="@+id/editText8"
+            />
+
+    </LinearLayout>
+
     <Button
         android:layout_width="137dp"
         android:layout_height="wrap_content"
-        android:text="Add Services"
+        android:text="Add Package"
         android:id="@+id/button"
         android:layout_gravity="right" />
-
-
-
 
 </LinearLayout>
