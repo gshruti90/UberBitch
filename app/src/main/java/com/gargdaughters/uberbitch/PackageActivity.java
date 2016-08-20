@@ -8,6 +8,6 @@ public class PackageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.packages_add);
+        setContentView(R.layout.package_add);
     }
 }

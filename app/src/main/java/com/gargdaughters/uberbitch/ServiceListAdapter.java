@@ -38,7 +38,7 @@ public class ServiceListAdapter extends RecyclerView.Adapter<ServiceListAdapter.
     }
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.services_item_row,parent,false);
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.service_item_row,parent,false);
 
         return new ViewHolder(view);
     }

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 /**
  * Created by M1036631 on 01-Aug-16.
  */
-public class ServicesFragment extends Fragment {
+public class ServiceFragment extends Fragment {
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
     ServiceListAdapter adapter;
