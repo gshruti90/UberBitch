@@ -31,16 +31,15 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_height="wrap_content">
 
-    <EditText
+    <TextView
         android:layout_width= "150dp"
         android:layout_height="wrap_content"
         android:inputType="text"
         android:text="Gender"
         android:ems="10"
-        android:id="@+id/editText3"
+        android:id="@+id/TextView1"
         />
 
     <RadioButton
@@ -95,23 +94,25 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal">
 
-    <EditText
-        android:layout_width= "match_parent"
+    <TextView
+        android:layout_width= "wrap_content"
         android:layout_height="wrap_content"
         android:inputType="text"
         android:text="Employee Type"
         android:ems="10"
-        android:id="@+id/editText8" />
+        android:id="@+id/TextView2" />
 
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:entries="@array/employee_type_array"
-        android:prompt="@string/employee_type_string"/>
+        android:prompt="@string/employee_type_string"
+        android:spinnerMode="dropdown"
+        />
 
+        <!--android:entries="@array/employee_type_array" -->
 
-
-        </LinearLayout>
+    </LinearLayout>
     </LinearLayout>

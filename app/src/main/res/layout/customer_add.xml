@@ -3,9 +3,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
-    android:layout_width= "match_parent"
+    <EditText
+        android:layout_width= "match_parent"
     android:layout_height="wrap_content"
     android:inputType="number"
     android:text="Customer id"
@@ -36,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal">
 
-        <EditText
+        <TextView
             android:layout_width= "150dp"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -83,19 +82,4 @@
         android:ems="10"
         android:id="@+id/editText6" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
-
-        <EditText
-            android:layout_width= "match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:text="Customer Type"
-            android:ems="10"
-            android:id="@+id/editText8" />
-
-    </LinearLayout>
     </LinearLayout>

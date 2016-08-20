@@ -18,6 +18,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -105,9 +106,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         TabLayout tabLayout=(TabLayout)findViewById(R.id.tablayout);
         if (id == R.id.nav_services) {
-            tabLayout.getTabAt(0).select();
+            Intent intent = new Intent (this, ServiceActivity.class);
+            startActivity(intent);
+
+            //tabLayout.getTabAt(0).select();
         } else if (id == R.id.nav_packages) {
-            tabLayout.getTabAt(1).select();
+            Intent intent = new Intent (this, PackageActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_customer) {
             Intent intent=new Intent(this,CustomerActivity.class);
