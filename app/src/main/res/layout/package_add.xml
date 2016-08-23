@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
     <EditText
         android:layout_width= "match_parent"
@@ -23,53 +24,25 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
 
         <TextView
             android:layout_width= "100dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:inputType="text"
             android:layout_gravity="top"
             android:text="Select Service"
             android:ems="10"
             android:id="@+id/editText9"
-            />
+            android:layout_weight="0.11" />
 
-        <Spinner
-            android:layout_width="150dp"
+         <ImageButton
+             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:id="@+id/spinner5"
-            android:layout_gravity="center_horizontal"
-            android:entries="@array/service_list_array"
-            android:prompt="@string/service_list_string"/>
-
-
-    <Spinner
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:id="@+id/spinner2"
-        android:layout_gravity="center_horizontal"
-        android:entries="@array/price_type_array"
-        android:prompt="@string/price_type_string"/>
-
-    <TextView
-        android:layout_width= "50dp"
-        android:layout_height="50dp"
-        android:inputType="text"
-        android:text="Price"
-        android:layout_gravity="center"
-        android:ems="10"
-        android:id="@+id/editText5"
-        />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton"
-            android:background="@drawable/add_icon" />
-
+            android:id="@+id/imageButton1"
+            android:src="@mipmap/add_icon"/>
     </LinearLayout>
-
 
 
 <Button
@@ -77,6 +50,6 @@
     android:layout_height="wrap_content"
     android:text="Add Package"
     android:id="@+id/button"
-    android:layout_gravity="right" />
+    android:layout_gravity="center" />
 
 </LinearLayout>
